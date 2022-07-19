@@ -1,0 +1,162 @@
+*{
+    margin: 0;
+    padding: 0;
+    border: 0;
+    box-sizing: border-box;
+}
+
+body{
+    font-family: Roboto;
+    background-color: aquamarine;
+}
+
+.Media-news{
+    margin: 50px auto;
+    width: 80%;
+    display: grid;
+    height: 530px;
+    grid-template-columns: repeat(12, 1fr);
+    box-shadow:  0 10px 10px 0 rgba(35, 172, 160, 0.5);
+}
+
+.Control-page{
+    grid-column: 1/span 5;
+    background: url(img/background.jpg);
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-blend-mode:luminosity darken;
+    text-align: center;
+    align-items: center;
+    color: white;
+}
+
+.Control-page h1{
+    color: white;
+    margin-top: 200px;
+    font-size: 37px;
+    margin-bottom: 10px;
+}
+
+.Control-page p{
+    margin-bottom: 10px;
+    margin-left: 40px;
+}
+
+.button{
+    background-color: rgba(102, 255, 204, 0.5);
+    color: white;
+    width: 30%;
+    padding: 7px 18px 12px 19px;
+    border-radius: 20px;
+    display: flex;
+    justify-content: space-around;
+    margin: 0 auto;
+}
+
+.button p{
+    margin-bottom: 0px;
+    margin-top: 5px;
+    margin-left: 0px;
+}
+
+.button:hover{
+    background-color: rgb(93, 189, 179);
+   cursor: pointer;
+   transition: 0.5s;
+}
+
+.Articles{
+    grid-column: 6/span 7;
+    background-color: white;
+}
+
+.Articles .header,
+.Articles .years,
+.Articles .startup,
+.Articles .Arc,
+.Articles .league,
+.Articles .Ai,
+.Articles .lead{
+    display: flex;
+}
+
+.Articles .header{
+    justify-content: space-between;
+    padding: 30px 70px 30px 30px;
+}
+
+.Articles .header img{
+    width: 30px;
+}
+
+.Articles .header h2{
+    font-size: 36px;
+}
+
+.years{
+    justify-content: space-between;
+    padding: 0 30px;
+    color: gray;
+    font-size: 23px;
+}
+
+.years p:nth-child(1){
+    color: black;
+}
+
+.years p:last-child{
+  color: rgb(243, 242, 242);
+}
+span{
+    color: rgb(204, 204, 204);
+}
+
+.years p:hover{
+    color: black;
+    transition:  all  0.1s;
+    cursor: pointer;
+}
+
+.years img,
+.startup img,
+.Arc img,
+.Ai img,
+.league img,
+.lead img{
+    width: 50px;
+    height: 50px;
+}
+
+.startup div,
+.Arc div,
+.league div,
+.Ai div,
+.lead div{
+   display: flex;
+   padding: 10px 20px;
+}
+
+.month{
+    flex-direction: column;
+    
+}
+
+.Articles h1{
+    font-size: 50px;
+}
+
+.Articles h6{
+    width: 260px;
+    font-size: 16px;
+    margin-right: 55px;
+    padding-top: 10px;
+}
+
+.Arc img,
+.league img,
+.lead img,
+.Ai img{
+    border-radius: 30px;
+}
+
